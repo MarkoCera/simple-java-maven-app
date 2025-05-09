@@ -12,11 +12,6 @@ pipeline {
     }
     
     stages {
-        stage("Pull source") {
-            steps {
-                git url: 'https://github.com/MarkoCera/simple-java-maven-app.git'
-            }
-        }
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'
