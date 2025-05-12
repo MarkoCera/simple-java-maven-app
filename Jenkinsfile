@@ -4,7 +4,7 @@ pipeline {
     environment {
         DEPLOY_USER = 'cera'
         DEPLOY_HOST = '172.25.100.152'
-        DEPLOY_PATH = '/tmp/pipeline-scm'
+        DEPLOY_PATH = '/tmp/pipeline-scm/'
     }
     
     tools {
